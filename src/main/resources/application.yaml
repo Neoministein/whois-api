@@ -1,0 +1,9 @@
+server:
+    port: 8110
+javax:
+    sql:
+        DataSource:
+            MainDataSource:
+                dataSourceClassName: org.sqlite.SQLiteDataSource
+                dataSource:
+                    url: ${javax.persistence.jdbc.url}
